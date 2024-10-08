@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="A simple todo list web application to manage and track tasks." />
+  <meta name="keywords" content="todo, task manager, productivity, web app" />
+  <title>Exercise 1 - My ToDo</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Afacad+Flux:wght@100..1000&family=DM+Serif+Display:ital@0;1&family=Playfair+Display:wght@400..900&display=swap');
+    </style>
+  <script type="module" src="/main.js" defer></script>
+</head>
+<body>
+  <main>
+    <div class="main-container">
+    <div class="top-area">
+      <form id="todo-form">
+      <h1>My ToDo</h1>
+      <!-- Task Counter -->
+      <div class="counter-container">
+      <span id="completed-counter"></span>
+      </div>
+      <!-- todo form -->
+       <div class="input-area">
+      <input type="text" id="todo-input" title="enter-task">
+      <button type="submit"  id="add-todo-btn" class="adds-btn">OK</button>
+    </div>
+      <p id="error-message" class="error"></p>
+    </form>
+    </div>
+    
+    <!-- Task List -->
+    <ul id="todo-list"></ul>
+  </main>
+</div>
+</body>
+</html>
